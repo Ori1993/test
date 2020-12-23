@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jdb02QogB399INshjt8ySddELNGB7quDuMrSTSzzFDpRWpsLp1n63nh8efH0mpqMKD8gJlzXqOKrOazacypdkw==",
+  "success": true,
+  "projectFilePath": "E:\\c#project\\apiword\\apiword\\apiword.Model\\apiword.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FWY\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

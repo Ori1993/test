@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiword</name>
+    </assembly>
+    <members>
+        <member name="M:apiword.Controllers.v1.HomeController.Index">
+            <summary>
+            程序主页面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:apiword.Controllers.v1.HomeController.Privacy">
+            <summary>
+            程序界面二
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:apiword.Controllers.v1.HomeController.PlayTest(System.String,System.String)">
+            <summary>
+            测试接口
+            </summary>
+            <param name="Name"></param>
+            <param name="years"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiword.Controllers.v1.HomeController.Error">
+            <summary>
+            错误页面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:apiword.Controllers.v2.TestController">
+            <summary>
+            测试控制器
+            </summary>
+        </member>
+        <member name="M:apiword.Controllers.v2.TestController.Index">
+            <summary>
+            测试首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:apiword.Controllers.v2.TestController.Test(apiword.Model.Love)">
+            <summary>
+            测试接口
+            </summary>
+            <param name="love">POSt参数模型</param>
+            <returns></returns>
+            [HttpPost("Test")]
+        </member>
+        <member name="T:apiword.SwaggerHelper.CustomApiVersion">
+            <summary>
+            自定义版本
+            </summary>
+        </member>
+        <member name="P:apiword.SwaggerHelper.CustomRouteAttribute.GroupName">
+            <summary>
+            分组名称,是来实现接口 IApiDescriptionGroupNameProvider
+            </summary>
+        </member>
+        <member name="M:apiword.SwaggerHelper.CustomRouteAttribute.#ctor(System.String)">
+            <summary>
+            自定义路由构造函数，继承基类路由
+            </summary>
+            <param name="actionName"></param>
+        </member>
+        <member name="M:apiword.SwaggerHelper.CustomRouteAttribute.#ctor(apiword.SwaggerHelper.CustomApiVersion.ApiVersions,System.String)">
+            <summary>
+            自定义版本+路由构造函数，继承基类路由
+            </summary>
+            <param name="version"></param>
+            <param name="actionName"></param>
+        </member>
+    </members>
+</doc>

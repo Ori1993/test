@@ -1,0 +1,9 @@
+E:\c#project\apiword\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.deps.json
+E:\c#project\apiword\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.dll
+E:\c#project\apiword\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.pdb
+E:\c#project\apiword\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.xml
+E:\c#project\apiword\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.AssemblyInfoInputs.cache
+E:\c#project\apiword\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.AssemblyInfo.cs
+E:\c#project\apiword\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.csproj.CoreCompileInputs.cache
+E:\c#project\apiword\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.dll
+E:\c#project\apiword\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.pdb
