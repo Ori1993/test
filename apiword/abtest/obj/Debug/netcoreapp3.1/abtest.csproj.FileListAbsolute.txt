@@ -1,9 +1,0 @@
-E:\c#project\apiword\apiword\abtest\bin\Debug\netcoreapp3.1\abtest.deps.json
-E:\c#project\apiword\apiword\abtest\bin\Debug\netcoreapp3.1\abtest.dll
-E:\c#project\apiword\apiword\abtest\bin\Debug\netcoreapp3.1\abtest.pdb
-E:\c#project\apiword\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.csprojAssemblyReference.cache
-E:\c#project\apiword\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.AssemblyInfoInputs.cache
-E:\c#project\apiword\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.AssemblyInfo.cs
-E:\c#project\apiword\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.csproj.CoreCompileInputs.cache
-E:\c#project\apiword\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.dll
-E:\c#project\apiword\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.pdb
