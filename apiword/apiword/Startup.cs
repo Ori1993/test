@@ -1,4 +1,5 @@
 
+using apiword.IOC2;
 using apiword.Test;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
@@ -39,6 +40,38 @@ namespace apiword
             services.AddSingleton<ISingTest,SingTest>();
             services.AddScoped<ISconTest,SconTest>();
             services.AddScoped<IAService,AService>();
+
+            //services.AddScoped<IMoreImplService, WelcomeChineseService>();
+            //services.AddScoped<IMoreImplService, WelcomeEnglishService>();
+            //SingletonFactory singletonFactory = new SingletonFactory();
+            //singletonFactory.AddService<IMoreImplService>(new WelcomeChineseService(), "Chinese");
+            //singletonFactory.AddService<IMoreImplService>(new WelcomeEnglishService(), "English");
+
+            //services.AddSingleton(singletonFactory);
+
+            services.AddScoped<WelcomeChineseService>();
+            services.AddScoped<WelcomeEnglishService>();
+            services.AddScoped(factory =>
+            {
+                Func<string, IMoreImplService> accesor = key =>
+                {
+                    if (key.Equals("Chinese"))
+                    {
+                        // 因为这里是从容器获取服务实例的，所以我们可以控制生命周期
+                        return factory.GetService<WelcomeChineseService>();
+                    }
+                    else if (key.Equals("English"))
+                    {
+                        return factory.GetService<WelcomeEnglishService>();
+                    }
+                    else
+                    {
+                        throw new ArgumentException($"Not Support key : {key}");
+                    }
+                };
+                return accesor;
+            });
+
             var basePath = ApplicationEnvironment.ApplicationBasePath;
             services.AddSwaggerGen(c =>
             {
