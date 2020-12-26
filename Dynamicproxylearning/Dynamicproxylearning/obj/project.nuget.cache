@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0NhTydOc4/DnkGVB+6qaRvxJafNEegD+D6Q5A2p7O2PFvC6e+/TLmH1QyyT45pDkvL7FLGppbRfxaoJHc8WWfw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\Dynamicproxylearning\\Dynamicproxylearning\\Dynamicproxylearning.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
