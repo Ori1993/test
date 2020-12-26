@@ -1,0 +1,8 @@
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\bin\Debug\netcoreapp3.1\abtest.deps.json
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\bin\Debug\netcoreapp3.1\abtest.dll
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\bin\Debug\netcoreapp3.1\abtest.pdb
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.AssemblyInfo.cs
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.dll
+C:\Users\DELL\Desktop\.net core\test\apiword\abtest\obj\Debug\netcoreapp3.1\abtest.pdb

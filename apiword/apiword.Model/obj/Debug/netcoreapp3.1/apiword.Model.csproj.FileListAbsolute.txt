@@ -1,0 +1,10 @@
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.deps.json
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.dll
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.pdb
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\bin\Debug\netcoreapp3.1\apiword.Model.xml
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.AssemblyInfo.cs
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.dll
+C:\Users\DELL\Desktop\.net core\test\apiword\apiword.Model\obj\Debug\netcoreapp3.1\apiword.Model.pdb

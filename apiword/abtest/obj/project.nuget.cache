@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PBDhI3brneCO/sSBP9Ggua0u5tVmgwWDAmQpbILCfWzzSJnIN4OrYypDzrG02KlleE55KdkV2jj1PPwL2pzDYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
