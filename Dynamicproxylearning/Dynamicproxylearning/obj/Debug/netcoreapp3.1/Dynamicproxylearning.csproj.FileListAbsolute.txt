@@ -6,7 +6,6 @@ C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\b
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\Dynamicproxylearning.runtimeconfig.dev.json
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\Dynamicproxylearning.dll
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\Dynamicproxylearning.pdb
-C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.csprojAssemblyReference.cache
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.AssemblyInfoInputs.cache
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.AssemblyInfo.cs
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.csproj.CoreCompileInputs.cache
@@ -20,3 +19,9 @@ C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\o
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.genruntimeconfig.cache
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.csproj.CopyComplete
+C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\Log4net.config
+C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\log4net.dll
+C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Desktop\.net core\test\Dynamicproxylearning\Dynamicproxylearning\obj\Debug\netcoreapp3.1\Dynamicproxylearning.csprojAssemblyReference.cache
