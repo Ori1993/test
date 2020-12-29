@@ -75,7 +75,6 @@ namespace Dynamicproxylearning
             }
 
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

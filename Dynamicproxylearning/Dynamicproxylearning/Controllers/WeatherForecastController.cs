@@ -42,7 +42,8 @@ namespace Dynamicproxylearning.Controllers
         [HttpGet]
         public object Get()
         {
-
+            _logger.LogError("测试日志ok不");
+            
             var tt = _welcome.SayHi();
             return tt;
 
