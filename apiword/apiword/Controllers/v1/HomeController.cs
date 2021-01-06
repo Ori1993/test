@@ -70,7 +70,7 @@ namespace apiword.Controllers.v1
         }
 
         /// <summary>
-        /// 测试Post接口
+        /// 测试Post接口1
         /// </summary>
         /// <param name="info"></param>
         /// <returns></returns>
