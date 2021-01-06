@@ -40,7 +40,7 @@
         </member>
         <member name="M:apiword.Controllers.v1.HomeController.PostTest(apiword.Models.Info)">
             <summary>
-            测试Post接口
+            测试Post接口1
             </summary>
             <param name="info"></param>
             <returns></returns>
@@ -70,6 +70,7 @@
             <returns></returns>
             [HttpPost("Test")]
         </member>
+        <!-- Badly formed XML comment ignored for member "M:apiword.Controllers.v3.Version3Controller.PlayTest(System.String,System.String)" -->
         <member name="T:apiword.IOC2.SingletonFactory">
             <summary>
             定义一个服务工厂,Singleton注入

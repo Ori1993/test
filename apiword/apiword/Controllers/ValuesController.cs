@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace apiword.Controllers
 {
-    
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class ValuesController : Controller
     {
         private readonly ISingTest sing;
