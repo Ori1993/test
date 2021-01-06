@@ -103,6 +103,8 @@ namespace apiword
                         //TermsOfService = "None",
                         Contact = new OpenApiContact { Name = "Blog.Core", Email = "Blog.Core@xxx.com", Url = new Uri( "https://www.jianshu.com/u/94102b59cc2a") }
                     });
+                    var xmlPath = Path.Combine(basePath, "apiword.xml");//这个就是刚刚配置的xml文件名
+                    c.IncludeXmlComments(xmlPath, true);//默认的第二个参数是false，这个是controller的注释，记得修改
                 });
             });
         }
