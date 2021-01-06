@@ -45,10 +45,24 @@ namespace apiword.Controllers.v1
         /// <summary>
         /// 测试接口
         /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "id": 你好,
+        ///        "name": "Item1",
+        ///        "isComplete": true
+        ///     }
+        ///
+        /// </remarks>
         /// <param name="Name">姓名</param>
         /// <param name="years">年龄</param>
-        /// <returns></returns>
+        /// <returns>A newly created TodoItem</returns>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>   
         [HttpPost("PlayTest")]
+
         public string PlayTest(string Name, string years )
         {
             return Name+ years + "测试成功";
