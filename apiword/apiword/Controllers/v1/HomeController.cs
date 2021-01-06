@@ -45,8 +45,8 @@ namespace apiword.Controllers.v1
         /// <summary>
         /// 测试接口
         /// </summary>
-        /// <param name="Name"></param>
-        /// <param name="years"></param>
+        /// <param name="Name">姓名</param>
+        /// <param name="years">年龄</param>
         /// <returns></returns>
         [HttpPost("PlayTest")]
         public string PlayTest(string Name, string years )

@@ -63,11 +63,11 @@ namespace apiword.Controllers
         }
 
         [HttpGet]
-        public object Hello()
+        public object Hello(string he)
         {
             //return moreImplServiceChinese.SayWelocome()+"++++"+moreImplServiceEnglish.SayWelocome();
 
-            return moreImplServiceChinese.SayWelocome()+"+++++"+ + "\n" + moreImplServiceEnglish.SayWelocome();
+            return moreImplServiceChinese.SayWelocome()+"+++"+he+"++" + moreImplServiceEnglish.SayWelocome();
         }
 
 

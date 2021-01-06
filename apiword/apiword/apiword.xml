@@ -20,8 +20,8 @@
             <summary>
             测试接口
             </summary>
-            <param name="Name"></param>
-            <param name="years"></param>
+            <param name="Name">姓名</param>
+            <param name="years">年龄</param>
             <returns></returns>
         </member>
         <member name="M:apiword.Controllers.v1.HomeController.Error">

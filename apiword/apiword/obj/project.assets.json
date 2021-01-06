@@ -1657,7 +1657,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -3396,7 +3396,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "Z1UfSF6dlpCdZdxh6LeoGlYH+q6ptG/iiIWgUUeKhE3DbQACmZkU7Sz2nOX0qdHjz72MOdYRbkSJ5Qwl6sZgvg==",
+      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -5335,23 +5335,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\FWY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\apiword.csproj",
+      "projectUniqueName": "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\apiword.csproj",
       "projectName": "apiword",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\apiword.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\obj\\",
+      "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\apiword.csproj",
+      "packagesPath": "C:\\Users\\FWY\\.nuget\\packages\\",
+      "outputPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\FWY\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5359,17 +5355,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://172.16.41.231:10100/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj"
+            "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj": {
+              "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj"
             },
-            "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj"
+            "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj": {
+              "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj"
             }
           }
         }

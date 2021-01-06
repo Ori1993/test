@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\apiword.csproj": {}
+    "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\apiword.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj": {
+    "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj",
+        "projectUniqueName": "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj",
         "projectName": "abtest",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\obj\\",
+        "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj",
+        "packagesPath": "C:\\Users\\FWY\\.nuget\\packages\\",
+        "outputPath": "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FWY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://172.16.41.231:10100/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,12 +50,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -67,20 +59,17 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj": {
+    "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj",
+        "projectUniqueName": "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj",
         "projectName": "apiword.Model",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\obj\\",
+        "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj",
+        "packagesPath": "C:\\Users\\FWY\\.nuget\\packages\\",
+        "outputPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FWY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,6 +77,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://172.16.41.231:10100/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,12 +105,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -130,20 +114,17 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\apiword.csproj": {
+    "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\apiword.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\apiword.csproj",
+        "projectUniqueName": "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\apiword.csproj",
         "projectName": "apiword",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\apiword.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword\\obj\\",
+        "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\apiword.csproj",
+        "packagesPath": "C:\\Users\\FWY\\.nuget\\packages\\",
+        "outputPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FWY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -151,17 +132,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://172.16.41.231:10100/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\abtest\\abtest.csproj"
+              "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj": {
+                "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\abtest\\abtest.csproj"
               },
-              "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\.net core\\test\\apiword\\apiword.Model\\apiword.Model.csproj"
+              "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj": {
+                "projectPath": "E:\\git资料上传\\apiword\\test\\apiword\\apiword.Model\\apiword.Model.csproj"
               }
             }
           }
