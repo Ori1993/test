@@ -17,11 +17,32 @@
             <returns></returns>
         </member>
         <member name="M:apiword.Controllers.v1.HomeController.PlayTest(System.String,System.String)">
+             <summary>
+             测试玩加接口
+             </summary>
+             <field name="name" type="String">憨憨</field>
+             <remarks>
+             接口示例:
+             <para>给爸爸换行听见没有</para>
+                 
+                 {
+                    "id": 你好,
+                    "name": "Item1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <param name="Name">姓名</param>
+             <param name="years">年龄</param>
+             <returns>A newly created TodoItem</returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>   
+        </member>
+        <member name="M:apiword.Controllers.v1.HomeController.PostTest(apiword.Models.Info)">
             <summary>
-            测试接口
+            测试Post接口
             </summary>
-            <param name="Name">姓名</param>
-            <param name="years">年龄</param>
+            <param name="info"></param>
             <returns></returns>
         </member>
         <member name="M:apiword.Controllers.v1.HomeController.Error">
@@ -70,6 +91,21 @@
             <typeparam name="TService"></typeparam>
             <param name="service"></param>
             <param name="id"></param>
+        </member>
+        <member name="T:apiword.Models.Info">
+            <summary>
+            接口参数
+            </summary>
+        </member>
+        <member name="P:apiword.Models.Info.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:apiword.Models.Info.age">
+            <summary>
+            年龄
+            </summary>
         </member>
         <member name="T:apiword.SwaggerHelper.CustomApiVersion">
             <summary>

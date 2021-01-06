@@ -43,12 +43,13 @@ namespace apiword.Controllers.v1
 
 
         /// <summary>
-        /// 测试接口
+        /// 测试玩加接口
         /// </summary>
+        /// <field name="name" type="String">憨憨</field>
         /// <remarks>
-        /// Sample request:
-        ///
-        ///     POST /Todo
+        /// 接口示例:
+        /// <para>给爸爸换行听见没有</para>
+        ///     
         ///     {
         ///        "id": 你好,
         ///        "name": "Item1",
@@ -61,13 +62,23 @@ namespace apiword.Controllers.v1
         /// <returns>A newly created TodoItem</returns>
         /// <response code="201">Returns the newly created item</response>
         /// <response code="400">If the item is null</response>   
-        [HttpPost("PlayTest")]
+        [HttpGet("PlayTest")]
 
         public string PlayTest(string Name, string years )
         {
             return Name+ years + "测试成功";
         }
 
+        /// <summary>
+        /// 测试Post接口
+        /// </summary>
+        /// <param name="info"></param>
+        /// <returns></returns>
+        [HttpPost("PostTest")]
+        public string PostTest(Info info)
+        {
+            return info.Name + info.age + "测试成功";
+        }
         /// <summary>
         /// 错误页面
         /// </summary>
