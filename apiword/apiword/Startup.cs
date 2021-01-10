@@ -1,24 +1,23 @@
-
 using apiword.IOC2;
 using apiword.Test;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Http;
 using Microsoft.DotNet.PlatformAbstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
+using System.Text;
 using static apiword.SwaggerHelper.CustomApiVersion;
-
 namespace apiword
 {
     public class Startup
@@ -30,16 +29,17 @@ namespace apiword
 
         public IConfiguration Configuration { get; }
         public string ApiName { get; set; } = "认知诊断";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
 
-
             services.AddTransient<ITranTest, TranTest>();
-            services.AddSingleton<ISingTest,SingTest>();
-            services.AddScoped<ISconTest,SconTest>();
-            services.AddScoped<IAService,AService>();
+            services.AddSingleton<ISingTest, SingTest>();
+            services.AddScoped<ISconTest, SconTest>();
+            services.AddScoped<IAService, AService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             //services.AddScoped<IMoreImplService, WelcomeChineseService>();
             //services.AddScoped<IMoreImplService, WelcomeEnglishService>();
@@ -101,24 +101,48 @@ namespace apiword
                         Title = $"{ApiName} 接口文档",
                         Description = $"{ApiName} HTTP API " + version,
                         //TermsOfService = "None",
-                        Contact = new OpenApiContact { Name = "Blog.Core", Email = "Blog.Core@xxx.com", Url = new Uri( "https://www.jianshu.com/u/94102b59cc2a") }
+                        Contact = new OpenApiContact { Name = "Blog.Core", Email = "Blog.Core@xxx.com", Url = new Uri("https://www.jianshu.com/u/94102b59cc2a") }
                     });
                     var xmlPath = Path.Combine(basePath, "apiword.xml");//这个就是刚刚配置的xml文件名
                     c.IncludeXmlComments(xmlPath, true);//默认的第二个参数是false，这个是controller的注释，记得修改
                 });
             });
+            #region JWT
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
+            var symmetricKeyAsBase64 = "qweasdzxcqweasdzxc";
+            var keyByteArray = Encoding.ASCII.GetBytes(symmetricKeyAsBase64);
+            var signingKey = new SymmetricSecurityKey(keyByteArray);
+
+            var tokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = signingKey,
+                ValidateIssuer = true,
+                ValidIssuer = "http://localhost:5000",//发行人
+                ValidateAudience = true,
+                ValidAudience = "http://localhost:5001",//订阅人
+                ValidateLifetime = true,
+                ClockSkew = TimeSpan.FromSeconds(30),
+                RequireExpirationTime = true,
+            };
+
+            services.AddAuthentication("Bearer")
+             .AddJwtBearer(o =>
+             {
+                 o.TokenValidationParameters = tokenValidationParameters;
+             });
+            #endregion
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-
             var basePath = ApplicationEnvironment.ApplicationBasePath;
 
             //直接注册某一个类和接口
             //左边的是实现类，右边的As是接口
             //方法1
             builder.RegisterType<AdvertisementServices>().As<IAdvertisementServices>();
-
 
             //注册要通过反射创建的组件
             //方法2
@@ -130,12 +154,7 @@ namespace apiword
                       .AsImplementedInterfaces()
                       .InstancePerLifetimeScope()
                       .EnableInterfaceInterceptors();
-
         }
-
-
-
-
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
