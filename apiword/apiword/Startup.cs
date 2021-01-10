@@ -2,6 +2,7 @@ using apiword.IOC2;
 using apiword.Test;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
+using Blog.Core.AuthHelper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
@@ -103,9 +105,25 @@ namespace apiword
                         //TermsOfService = "None",
                         Contact = new OpenApiContact { Name = "Blog.Core", Email = "Blog.Core@xxx.com", Url = new Uri("https://www.jianshu.com/u/94102b59cc2a") }
                     });
-                    var xmlPath = Path.Combine(basePath, "apiword.xml");//这个就是刚刚配置的xml文件名
-                    c.IncludeXmlComments(xmlPath, true);//默认的第二个参数是false，这个是controller的注释，记得修改
+
                 });
+
+                var xmlPath = Path.Combine(basePath, "apiword.xml");//这个就是刚刚配置的xml文件名
+                c.IncludeXmlComments(xmlPath, true);//默认的第二个参数是false，这个是controller的注释，记得修改
+                c.OperationFilter<AddResponseHeadersFilter>();
+                c.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
+
+                c.OperationFilter<SecurityRequirementsOperationFilter>();
+
+                #region Token绑定到ConfigureServices
+                c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                {
+                    Description = "JWT授权(数据将在请求头中进行传输) 直接在下框中输入Bearer {token}（注意两者之间是一个空格）\"",
+                    Name = "Authorization",//jwt默认的参数名称
+                    In = ParameterLocation.Header,//jwt默认存放Authorization信息的位置(请求头中)
+                    Type = SecuritySchemeType.ApiKey
+                });
+                #endregion
             });
             #region JWT
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
@@ -186,7 +204,8 @@ namespace apiword
             app.UseRouting();
 
             app.UseAuthorization();
-
+            //采用自定义中间件的方式实现
+            //app.UseMiddleware<JwtTokenAuth>();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

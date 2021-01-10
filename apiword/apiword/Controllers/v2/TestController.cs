@@ -27,7 +27,6 @@ namespace apiword.Controllers.v2
     public class TestController : ControllerBase
     {
         private readonly IHttpContextAccessor _accessor;
-        ClaimsPrincipal User = new ClaimsPrincipal();
         public IHttpContextAccessor HttpContextAccessor { get; set; }
 
         public TestController(IHttpContextAccessor accessor)
@@ -76,7 +75,7 @@ namespace apiword.Controllers.v2
                     new Claim(JwtRegisteredClaimNames.Email,"361548856@qq.com"),
                     new Claim(JwtRegisteredClaimNames.Sub,"1"),
                 };
-            var token_simple = new JwtSecurityToken(claims: claims);
+            //var token_simple = new JwtSecurityToken(claims: claims);
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("qweasdzxcqweasdzxc"));
 
@@ -84,7 +83,7 @@ namespace apiword.Controllers.v2
                 issuer: "https://localhost:5000",
                 audience: "https://localhost:5001",
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
+                expires: DateTime.Now.AddHours(1),
                 signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256));
 
             var jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
@@ -92,8 +91,9 @@ namespace apiword.Controllers.v2
         }
 
         [HttpGet]
-        [CustomRoute(ApiVersions.v2, "Jwtget")]
         [Authorize]
+        [CustomRoute(ApiVersions.v2, "Jwtget")]
+        //[Authorize]
         public ActionResult<IEnumerable<string>> Jwtget(string jwtStr)
         {
             //1
