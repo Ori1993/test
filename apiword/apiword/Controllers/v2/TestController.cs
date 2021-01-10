@@ -1,5 +1,6 @@
 ﻿using apiword.Model;
 using apiword.SwaggerHelper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -83,7 +84,7 @@ namespace apiword.Controllers.v2
                 issuer: "https://localhost:5000",
                 audience: "https://localhost:5001",
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(5),
+                expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256));
 
             var jwtToken = new JwtSecurityTokenHandler().WriteToken(token);
@@ -92,6 +93,7 @@ namespace apiword.Controllers.v2
 
         [HttpGet]
         [CustomRoute(ApiVersions.v2, "Jwtget")]
+        [Authorize]
         public ActionResult<IEnumerable<string>> Jwtget(string jwtStr)
         {
             //1
