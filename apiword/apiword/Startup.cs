@@ -2,7 +2,6 @@ using apiword.IOC2;
 using apiword.Test;
 using Autofac;
 using Autofac.Extras.DynamicProxy;
-using Blog.Core.AuthHelper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -202,7 +201,7 @@ namespace apiword
                 c.RoutePrefix = "";
             });
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
             //采用自定义中间件的方式实现
             //app.UseMiddleware<JwtTokenAuth>();
