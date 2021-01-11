@@ -136,9 +136,9 @@ namespace apiword
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = signingKey,
                 ValidateIssuer = true,
-                ValidIssuer = "http://localhost:5000",//发行人
+                ValidIssuer = "abc",//发行人
                 ValidateAudience = true,
-                ValidAudience = "http://localhost:5001",//订阅人
+                ValidAudience = "efd",//订阅人
                 ValidateLifetime = true,
                 ClockSkew = TimeSpan.FromSeconds(30),
                 RequireExpirationTime = true,

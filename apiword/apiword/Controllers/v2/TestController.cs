@@ -80,8 +80,8 @@ namespace apiword.Controllers.v2
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("qweasdzxcqweasdzxc"));
 
             var token = new JwtSecurityToken(
-                issuer: "https://localhost:5000",
-                audience: "https://localhost:5001",
+                issuer: "abc",
+                audience: "efd",
                 claims: claims,
                 expires: DateTime.Now.AddHours(1),
                 signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256));
