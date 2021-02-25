@@ -64,7 +64,12 @@ namespace apiword.Controllers.v2
         {
             return Ok(new { status = 220, data = "我是第二版的博客信息" });
         }
-
+        [HttpGet]
+        [CustomRoute(ApiVersions.v2, "HelloTest")]
+        public object HelloTest()
+        {
+            return Ok(new { status = 220, data = "我是第二版的博客信息" });
+        }
         [HttpGet]
         [CustomRoute(ApiVersions.v2, "Jwttest")]
         public ActionResult<IEnumerable<string>> Jwttest()
